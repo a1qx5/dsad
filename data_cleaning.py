@@ -39,6 +39,7 @@ cleaned_songs[float_columns] = cleaned_songs[float_columns].astype(float)
 int_columns = ['key', 'mode']
 cleaned_songs[int_columns] = cleaned_songs[int_columns].astype(int)
 
+# Print final structure
 print(f"Final CSV columns: {cleaned_songs.columns}\n")
 print(f"Final CSV shape: {cleaned_songs.shape}\n")
 
