@@ -1,3 +1,44 @@
-**Raw dataset obtained from https://www.kaggle.com/datasets/sujaykapadnis/spotify-songs/data**
+# Spotify Songs Analysis - PCA & Clustering
 
-Saved to [data/raw/spotify_songs.csv](data/raw/spotify_songs.csv) 
+Analysis of 26,229 Spotify songs using Principal Component Analysis and Hierarchical Clustering.
+
+## Dataset
+**Source**: [Kaggle - Spotify Songs](https://www.kaggle.com/datasets/sujaykapadnis/spotify-songs/data)  
+**Features**: 12 audio characteristics (danceability, energy, acousticness, etc.)  
+**Genres**: 6 categories (pop, rap, rock, latin, EDM, R&B)
+
+## Project Workflow
+
+### 1. Data Cleaning & Normalization ✅
+**Scripts**: `data_cleaning.py`, `data_corr_norm.py`
+- Removed duplicates and irrelevant columns
+- Handled missing values
+- Standardized features (mean=0, std=1)
+- **Output**: `data/IN/scaled_features.csv`
+
+### 2. Principal Component Analysis (PCA) ✅
+**Script**: `pca_analysis.py`
+- Reduced 12 features to 9 principal components
+- Retained 88.59% of variance
+- Analyzed component loadings and interpretations
+- **Outputs**: 
+  - `data/OUT/pca_data.csv` (for clustering)
+  - 3 visualizations in `figures/`
+
+### 3. Hierarchical Clustering 🔄
+**Status**: In progress
+- Use `data/OUT/pca_data.csv` as input
+
+### 4. Interpretation & Documentation 📝
+**Status**: Pending
+
+## How to Run
+
+```bash
+# Step 1: Data preparation
+python src/data_cleaning.py
+python src/data_corr_norm.py
+
+# Step 2: PCA analysis
+python src/pca_analysis.py
+```
