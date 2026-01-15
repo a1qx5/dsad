@@ -52,4 +52,7 @@ python src/data_corr_norm.py
 
 # Step 2: PCA analysis
 python src/pca_analysis.py
+
+# Step 3: Hierarchical clustering
+python src/hierarchical_clustering.py
 ```
