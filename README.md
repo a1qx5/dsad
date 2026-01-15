@@ -40,8 +40,8 @@ Analysis of 26,229 Spotify songs using Principal Component Analysis and Hierarch
   - `data/OUT/cluster_genre_crosstab.csv`
   - 4 visualizations in `figures/`
 
-### 4. Interpretation & Documentation 📝
-**Status**: Pending
+### 4. Interpretation & Documentation ✅
+**Status**: Complete
 
 ## How to Run
 
