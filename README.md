@@ -25,9 +25,20 @@ Analysis of 26,229 Spotify songs using Principal Component Analysis and Hierarch
   - `data/OUT/pca_data.csv` (for clustering)
   - 3 visualizations in `figures/`
 
-### 3. Hierarchical Clustering 🔄
-**Status**: In progress
-- Use `data/OUT/pca_data.csv` as input
+### 3. Hierarchical Clustering ✅
+**Status**: Completed 
+
+- Uses `data/OUT/pca_data.csv` as input
+- Method: Ward's (minimum variance)
+- Distance metric: Euclidean
+- Input features: 9 principal components
+- Assigned data to two clusters
+- C1: 4 051 songs (15.4%)
+- C2: 22 178 songs (84.6%)
+- **Outputs**
+  - `data/OUT/clustered_songs.csv` 
+  - `data/OUT/cluster_genre_crosstab.csv`
+  - 4 visualizations in `figures/`
 
 ### 4. Interpretation & Documentation 📝
 **Status**: Pending
